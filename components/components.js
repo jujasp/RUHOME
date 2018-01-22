@@ -117,7 +117,7 @@ AFRAME.registerComponent("collisionfall", {
 
         setTimeout(function() {
                 collidedObj.appendChild(renewPos)
-            }, 10000)
+            }, 4000)
 
 
          //   fog="type: linear; color: #e63462; far: 30; near: 0"
