@@ -24,7 +24,8 @@
             keyboard-shortcuts="" 
             screenshot="" 
             vr-mode-ui="" 
-            auto-enter-vr="">
+            auto-enter-vr=""
+            fog="type: linear; color: #356569; far: 50; near: 0">
 <!-- ASSETS -->
         <a-assets>
             <a-asset-item id="home-obj" src="./models/home/3dhome.obj"></a-asset-item>
@@ -88,10 +89,6 @@
         <a-entity geometry="primitive: box; radius: 0.3" random-position="min:-10 4 -10; max:13 12 10" static-body scale="2 0.3 1.5"></a-entity>
         <a-entity geometry="primitive: box; radius: 0.3" random-position="min:-10 4 -10; max:13 10 10" static-body scale="2 0.3 1.5"></a-entity>
 
-        <a-entity geometry="primitive: box; radius: 0.3" random-position="min:-10 8 -10; max:13 14 10" static-body scale="2 0.3 1.5"></a-entity>
-        <a-entity geometry="primitive: box; radius: 0.3" random-position="min:-10 8 -10; max:13 14 10" static-body scale="2 0.3 1.5"></a-entity>
-        <a-entity geometry="primitive: box; radius: 0.3" random-position="min:-10 8 -10; max:13 14 10" static-body scale="2 0.3 1.5"></a-entity>
-        <a-entity geometry="primitive: box; radius: 0.3" random-position="min:-10 8 -10; max:13 14 10" static-body scale="2 0.3 1.5"></a-entity>
         <a-entity geometry="primitive: box; radius: 0.3" random-position="min:-10 8 -10; max:13 14 10" static-body scale="2 0.3 1.5"></a-entity>
         <a-entity geometry="primitive: box; radius: 0.3" random-position="min:-10 8 -10; max:13 14 10" static-body scale="2 0.3 1.5"></a-entity>
         <a-entity geometry="primitive: box; radius: 0.3" random-position="min:-10 8 -10; max:13 14 10" static-body scale="2 0.3 1.5"></a-entity>
@@ -174,12 +171,6 @@
         random-position="min:-20 5 20; max:20 40 -20"
         dynamic-body>
         </a-sphere>
-
-        <a-entity keyboard-controls
-            sound="src: #song;
-                 on: keydown:KeyR;
-                 off: keydown:KeyY">
-        </a-entity>
 
         <a-entity id="home" obj-model="obj:#home-obj;" scale="0.017 0.017 0.017" 
         position="0.871 50.117 0.658" material="color:red" static-body>
