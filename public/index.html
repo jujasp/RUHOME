@@ -12,7 +12,6 @@
         <script src="https://unpkg.com/aframe-randomizer-components@^3.0.1/dist/aframe-randomizer-components.min.js"></script>
         <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v3.13.1/dist/aframe-extras.min.js"></script>
         <script src="/components.js"></script>
-        <!-- //fog="type: linear; color: #356569; far: 50; near: 0" -->
     </head>
     <body>
 <!-- SCENE -->
@@ -41,6 +40,7 @@
             kinematic-body
             geometry="primitive: sphere; radius: 0.005"
             jump-ability="maxJumps:3;"
+            position="0 51 0"
             cursor-listener
             collision-register
             collisionfall
@@ -139,8 +139,6 @@
         <a-entity geometry="primitive: box; radius: 0.3" random-position="min:-16 40 -10; max:16 49 16" static-body scale="2 0.3 1.5"></a-entity>
         <a-entity geometry="primitive: box; radius: 0.3" random-position="min:-16 40 -10; max:16 49 16" static-body scale="2 0.3 1.5"></a-entity>
  
-        <!-- <a-entity geometry="primitive: dodecahedron; radius: 0.3" random-position="min:-20 5 10; max:20 40 -20" static-body material="wireframe:true" random-scale="min: 2 2 2; max: 5 5 5" randommovement></a-entity> -->
-
         <a-entity geometry="primitive: dodecahedron; radius: 0.3" random-position="min:-20 5 10; max:20 10 -20" static-body material="wireframe:true" randommovement scale="5 5 5"></a-entity>
         <a-entity geometry="primitive: dodecahedron; radius: 0.3" random-position="min:-20 5 10; max:20 10 -20" static-body material="wireframe:true" randommovement scale="5 5 5"></a-entity>
         <a-entity geometry="primitive: dodecahedron; radius: 0.3" random-position="min:-20 5 10; max:20 10 -20" static-body material="wireframe:true" randommovement scale="5 5 5"></a-entity>
@@ -179,12 +177,9 @@
 
         <a-entity id="home" obj-model="obj:#home-obj;" scale="0.017 0.017 0.017" 
         position="0.871 50.117 0.658" material="color:red" static-body>
-        <a-animation attribute="material.color" to="white" repeat="indefinite" duration="10000" direction="alternate" ease="easeInOutCubic" begin="mouseenter"></a-animation>
         </a-entity>
         <a-entity id="yard" geometry="primitive: box; radius: 0.3" position="0 50 0" static-body scale="7 0.3 7">
         </a-entity>
-<!-- LIGHTBULB -->
-        <a-entity obj-model="obj:./models/lightbulb/bulb.obj" optacity="1" scale="1.58 1.58 1.58" position="0 0 0" id="bulb" lightsout="target:#directional"></a-entity>
     </a-scene>
   </body>
 </html>

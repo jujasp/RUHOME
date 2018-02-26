@@ -118,13 +118,6 @@ AFRAME.registerComponent("collisionfall", {
         setTimeout(function() {
                 collidedObj.appendChild(renewPos)
             }, 4000)
-
-
-         //   fog="type: linear; color: #e63462; far: 30; near: 0"
-        //   e.detail.target.el;  // Original entity (playerEl).
-        //   e.detail.body.el;    // Other entity, which playerEl touched.
-        //   e.detail.contact;    // Stats about the collision (CANNON.ContactEquation).
-        //   e.detail.contact.ni; // Normal (direction) of the collision (CANNON.Vec3).
         })
     }
 })
